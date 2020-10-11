@@ -16,6 +16,7 @@ namespace hometask2
             {
                 Console.Write($"введите R{num}: ");
                 r = double.Parse(Console.ReadLine());
+                if (r < 0) Console.WriteLine("радиус должен быть неотрицательным");
             } while (r < 0);
             return r;
         }
